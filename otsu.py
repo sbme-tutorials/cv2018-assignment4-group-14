@@ -109,7 +109,7 @@ def get_optimal_threshold():
     return optimal_threshold[0]
 
 
-image = Image.open('Pyramids2.jpg').convert("L")
+image = Image.open('images/Pyramids2.jpg').convert("L")
 img = np.asarray(image)
 
 h = Hist(img)
