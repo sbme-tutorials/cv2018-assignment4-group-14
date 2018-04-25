@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-
+# just for test
 def get8n(x, y, shape):
     out = []
     maxx = shape[1]-1
