@@ -26,12 +26,13 @@ def otsuThresholdB(image):
         # Calculation of mean gray level for object and background
         mBg = sum(bg * pdf[0:t]) / cdf[t]
         mObj = sum(obj * pdf[t:256]) / (1 - cdf[t])
-        # Calculate between class variance
+        # Calculate between class variance ==> Which should be maximumized
         varB = cdf[t] * (1 - cdf[t]) * (mObj - mBg) ** 2
         # Pick up max variance and corresponding threshold
         if varB > maxVarB:
             maxVarB = varB
             othresh = t
+    print othresh
     return othresh
 
 def binarize( gray_image , threshold ):
@@ -54,4 +55,6 @@ oTb = otsuThresholdB(myIm)
 binaryIm = binarize(myIm, oTb)
 plt.figure()
 plt.imshow(binaryIm)
+plt.title('Binarize after thresholding with Ostu')
+plt.suptitle('It doesnot actually Binarized Beacuse of Python')
 plt.show()

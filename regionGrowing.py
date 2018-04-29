@@ -4,7 +4,7 @@ import cv2, cv
 import numpy as np
 from matplotlib import pyplot as plt
 import sys
-
+#https://www.youtube.com/watch?v=DD52pKezdgY
 def on_mouse(event, x, y, flags, params):
     if event == cv.CV_EVENT_LBUTTONDOWN:
         print 'Start Mouse Position: ' + str(x) + ', ' + str(y)
