@@ -73,6 +73,7 @@ def region_growing(img, seed):
 
 if __name__ == '__main__':
 
+
     boxes = []
     filename = 'images/Pyramids1.jpg'
     img = cv2.imread(filename, 0)
