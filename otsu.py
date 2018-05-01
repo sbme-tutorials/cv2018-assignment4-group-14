@@ -121,11 +121,11 @@ plt.imshow(res)
 plt.savefig("otsu.jpg")
 
 #Load and show image
-image = Image.open('Pyramids2.jpg')
-plt.imshow(image)
-plt.show()
+#image = Image.open('Pyramids2.jpg')
+#plt.imshow(image)
+#plt.show()
 
 #Load and show otsu image
-image1 = Image.open('otsu.jpg')
-plt.imshow(image1)
+#image1 = Image.open('otsu.jpg')
+#plt.imshow(image1)
 plt.show()

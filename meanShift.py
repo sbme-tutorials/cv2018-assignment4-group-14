@@ -5,11 +5,12 @@ import numpy as np
 import cv2
 import random
 import sys
-
+"""
 if(len(sys.argv) <2):
     print 'Error'
 else:
     Input_Image=sys.argv[1];
+"""
 
 # load image in "original_image"
 
@@ -18,7 +19,8 @@ else:
 
 # load image in "original_image"
 
-K= cv2.imread("Pyramids2.jpg",1)
+K= cv2.imread("images/Pyramids2.jpg",1)
+#K= cv2.imread("images/Pyramids2.jpg")
 
 row=K.shape[0]
 col=K.shape[1]
